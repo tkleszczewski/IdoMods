@@ -11,6 +11,10 @@
   justify-content: center;
 }
 
+.relative {
+  position: relative;
+}
+
 .section-one__description-container {
   display: inline-block;
   flex-basis: 50%;
@@ -19,6 +23,8 @@
 
 .section-one__main-image {
   width: 673px;
+  position: relative;
+  z-index: 2;
 }
 
 .section-one__description-container {
@@ -73,4 +79,18 @@
   margin-top: 20px;
   border: none;
   cursor: pointer;
+}
+
+.section-one__main-image__decoration-left {
+  position: absolute;
+  left: 17px;
+  bottom: 85px;
+  z-index: 0;
+}
+
+.section-one__main-image__decoration-right {
+  position: absolute;
+  right: -9px;
+  bottom: 179px;
+  z-index: 0;
 }

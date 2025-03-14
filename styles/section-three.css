@@ -1,6 +1,7 @@
 .section-three {
   background-color: #fff;
   padding-top: 50px;
+  overflow-y: hidden;
 }
 
 .section-three__header {

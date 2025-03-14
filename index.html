@@ -333,7 +333,7 @@
           </div>
         </div>
       </section>
-      <section class="section-four">
+      <section id="section-four" class="section-four">
         <div class="section__four__page-size-select-container">
           <div class="section__four__page-size-select-widget">
             <div class="section__four__page-size-select-widget__label">
@@ -347,9 +347,9 @@
                 name="products-page-size"
                 id="products-page-size-select"
               >
-                <option class="select-option">12</option>
-                <option class="select-option">20</option>
-                <option class="select-option">40</option>
+                <option value="8" class="select-option">8</option>
+                <option value="12" class="select-option">12</option>
+                <option value="20" class="select-option">20</option>
               </select>
             </div>
           </div>
@@ -380,8 +380,9 @@
             <div class="products-list__list-item__item">ID: 8</div>
           </li>
         </ul>
+        <div id="loading-starter"></div>
       </section>
     </main>
-    <script src="./scripts/index.js"></script>
+    <script defer="true" src="./scripts/index.js"></script>
   </body>
 </html>

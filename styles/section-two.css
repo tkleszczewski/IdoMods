@@ -1,5 +1,6 @@
 .section-two {
   padding: 187px 153px;
+  padding-bottom: 96px;
 }
 
 .section-two__heading-container {
@@ -36,6 +37,8 @@
 }
 
 .section-two__features-list {
+  margin: 0;
+  padding: 0;
   margin-top: 135px;
   list-style-type: none;
   display: flex;
@@ -133,6 +136,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 0;
+  padding: 0;
   margin-top: 50px;
 }
 
@@ -141,12 +146,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 417px;
+  width: 417px;
   margin: 0;
   padding: 0;
 }
 
+.photo-container {
+  position: relative;
+}
+
 .photos-list__list-item__single-image {
+  position: relative;
+  z-index: 2;
   max-width: 360px;
 }
 
@@ -156,6 +167,7 @@
   column-gap: 20px;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .image-divider {
@@ -164,4 +176,51 @@
   width: 100%;
   background-color: #111;
   max-width: 360px;
+}
+
+.photo-item-1-decoration-left {
+  position: absolute;
+  bottom: 5px;
+  left: -73px;
+  z-index: 1;
+}
+
+.photo-item-1-decoration-right {
+  position: absolute;
+  bottom: 68px;
+  right: -62px;
+  z-index: 1;
+}
+
+.photo-item-2-decoration-left {
+  position: absolute;
+  bottom: 2px;
+  left: -62px;
+  z-index: 1;
+}
+
+.photo-item-2-decoration-right {
+  position: absolute;
+  bottom: 17px;
+  right: -20px;
+  z-index: 1;
+}
+
+.double-image {
+  position: relative;
+  z-index: 2;
+}
+
+.photo-item-3-decoration-left {
+  left: -80px;
+  top: 46px;
+  position: absolute;
+  z-index: 1;
+}
+
+.photo-item-3-decoration-right {
+  right: -23px;
+  bottom: 21px;
+  position: absolute;
+  z-index: 1;
 }

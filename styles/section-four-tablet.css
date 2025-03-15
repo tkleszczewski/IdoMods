@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 801px) and (max-width: 1500px) {
   .section-four {
     padding: 120px 25px;
   }
@@ -38,7 +38,7 @@
   }
 
   .products-list__list-item {
-    flex-basis: calc(100% / 2 - 50px / 2);
+    flex-basis: calc(100% / 3 - 100px / 3);
   }
 
   .products-list__list-item__item {

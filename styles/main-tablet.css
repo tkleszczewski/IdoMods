@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 801px) and (max-width: 1500px) {
   .main {
     background-color: #f1f1f1;
     padding-top: 52px;

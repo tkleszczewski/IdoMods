@@ -53,3 +53,7 @@
 .list-item__bold {
   font-weight: 700;
 }
+
+.header__hamburger-button {
+  display: none;
+}

@@ -97,7 +97,9 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ingredient-list__list-item__title {
@@ -201,4 +203,11 @@
 .section-three__bottom-image {
   position: relative;
   z-index: 2;
+}
+
+.section-three__main-image-container-mobile {
+  display: none;
+}
+.section-three__bottom-image-container-mobile {
+  display: none;
 }

@@ -8,3 +8,7 @@ html {
 .relative {
   position: relative;
 }
+
+.onlyMobile {
+  display: none;
+}

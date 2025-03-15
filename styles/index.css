@@ -7,7 +7,11 @@
 
 @import url("./section-one.css");
 @import url("./section-two.css");
+@import url("./only-mobile-section.css");
 @import url("./section-three.css");
 @import url("./section-four.css");
+
+@import url("./mobile.css");
+@import url("./tablet.css");
 
 @import url("./shimmer-effect.css");

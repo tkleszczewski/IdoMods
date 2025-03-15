@@ -1,0 +1,29 @@
+@media screen and (max-width: 600px) {
+  .header {
+    background-color: #f1f1f1;
+    padding: 9px 15px;
+    justify-content: space-between;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .header__logo-container {
+    margin-left: 0px;
+  }
+
+  .header__hamburger-button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-container__logo {
+    height: 12px;
+    width: auto;
+  }
+
+  .header__navigation {
+    display: none;
+  }
+}

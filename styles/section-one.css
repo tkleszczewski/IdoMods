@@ -94,3 +94,7 @@
   bottom: 179px;
   z-index: 0;
 }
+
+.section-one__main-image-mobile {
+  display: none;
+}

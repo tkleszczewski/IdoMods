@@ -224,3 +224,11 @@
   position: absolute;
   z-index: 1;
 }
+
+.feature-item__image-mobile {
+  display: none;
+}
+
+.feature-item__divider-mobile {
+  display: none;
+}

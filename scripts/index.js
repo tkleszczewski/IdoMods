@@ -4,6 +4,11 @@
     "products-page-size-select"
   );
   const productsContainer = document.getElementById("products-container");
+  const popoverElement = document.getElementById("product-popover");
+  const popoverContentContainer = document.getElementById(
+    "popover-content-container"
+  );
+  const popoverCloseButton = document.getElementById("popover-close-button");
 
   const API_URL = "https://brandstestowy.smallhost.pl/api/random";
 
@@ -17,6 +22,10 @@
   let totalPages = Infinity;
 
   let isLoading = false;
+
+  popoverCloseButton.addEventListener("click", () => {
+    popoverElement.classList.toggle("hidden");
+  });
 
   const renderShimmerCells = () => {
     const fragmentElement = new DocumentFragment();
@@ -46,6 +55,25 @@
       );
   };
 
+  const renderPopover = (dataset) => {
+    popoverElement.classList.toggle("hidden");
+    const allElements = popoverContentContainer.querySelectorAll("*");
+
+    allElements.forEach((element) => element.remove());
+
+    const fragmentElement = new DocumentFragment();
+
+    Object.entries(dataset).forEach(([key, value]) => {
+      const keyValueElement = document.createElement("div");
+      keyValueElement.classList.add("product-popover__keyvaluepair");
+      keyValueElement.textContent = `${key}: ${value}`;
+
+      fragmentElement.appendChild(keyValueElement);
+    });
+
+    popoverContentContainer.appendChild(fragmentElement);
+  };
+
   const renderDataCells = (data) => {
     const fragmentElement = new DocumentFragment();
 
@@ -53,11 +81,19 @@
       const liElement = document.createElement("li");
       liElement.classList.add("products-list__list-item");
 
-      const divElement = document.createElement("div");
-      divElement.classList.add("products-list__list-item__item");
-      divElement.textContent = `Id: ${data[i].id}`;
+      const btnElement = document.createElement("button");
+      btnElement.classList.add("products-list__list-item__item");
+      btnElement.textContent = `Id: ${data[i].id}`;
 
-      liElement.appendChild(divElement);
+      btnElement.dataset.id = data[i].id;
+      btnElement.dataset.text = data[i].text;
+      btnElement.dataset.image = data[i].image;
+
+      btnElement.addEventListener("click", (e) => {
+        renderPopover(e.target.dataset);
+      });
+
+      liElement.appendChild(btnElement);
       fragmentElement.appendChild(liElement);
     }
 

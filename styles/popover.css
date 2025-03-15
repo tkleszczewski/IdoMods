@@ -1,0 +1,46 @@
+.product-popover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 120;
+}
+
+.product-popover__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.product-popover__content {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 800px;
+  padding: 32px;
+}
+
+.product-popover-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-popover__header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 16px;
+}
+
+.product-popover__header__close-button {
+  border: none;
+  padding: 16px;
+}

@@ -485,6 +485,22 @@
         <ul class="section-four__products-list" id="products-container"></ul>
         <div id="loading-starter"></div>
       </section>
+      <div class="product-popover hidden" id="product-popover">
+        <div class="product-popover-wrapper">
+          <div class="product-popover__background"></div>
+          <div class="product-popover__content">
+            <header class="product-popover__header">
+              <button
+                id="popover-close-button"
+                class="product-popover__header__close-button"
+              >
+                x
+              </button>
+            </header>
+            <div id="popover-content-container" class="content-container"></div>
+          </div>
+        </div>
+      </div>
     </main>
     <script defer src="./scripts/index.js"></script>
     <script defer src="./scripts/mobile-menu.js"></script>

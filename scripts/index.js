@@ -47,8 +47,6 @@
   };
 
   const renderDataCells = (data) => {
-    console.log(data);
-
     const fragmentElement = new DocumentFragment();
 
     for (let i = 0; i < data.length; i++) {

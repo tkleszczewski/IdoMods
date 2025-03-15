@@ -11,7 +11,7 @@
       <div class="header__logo-container">
         <img class="logo-container__logo" src="./assets/img/logo.svg" />
       </div>
-      <button class="header__hamburger-button">
+      <button id="mobile-menu-button__outside" class="header__hamburger-button">
         <img
           src="./assets/img/mobile-hamburger-menu.svg"
           alt="hamburger menu icon"
@@ -27,6 +27,29 @@
         </ul>
       </nav>
     </header>
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <div class="mobile-menu__background"></div>
+      <div class="mobile-menu-content">
+        <header class="mobile-menu__header">
+          <button
+            id="mobile-menu-button__inside"
+            class="mobile-menu__header__hamburger-menu-button"
+          >
+            <img
+              src="./assets/img/mobile-hamburger-menu.svg"
+              alt="hamburger menu icon"
+            />
+          </button>
+        </header>
+        <ul class="mobile-menu-content__link-list">
+          <li class="mobile-menu__link-list__list-item">Działanie preparatu</li>
+          <li class="mobile-menu__link-list__list-item">Zalecenia</li>
+          <li class="mobile-menu__link-list__list-item">Skład</li>
+          <li class="mobile-menu__link-list__list-item">Dawkowanie</li>
+          <li class="mobile-menu__link-list__list-item">Opinie</li>
+        </ul>
+      </div>
+    </div>
     <main class="main">
       <section class="section-one">
         <div class="section-one__main-image-container">
@@ -463,6 +486,7 @@
         <div id="loading-starter"></div>
       </section>
     </main>
-    <script defer="true" src="./scripts/index.js"></script>
+    <script defer src="./scripts/index.js"></script>
+    <script defer src="./scripts/mobile-menu.js"></script>
   </body>
 </html>

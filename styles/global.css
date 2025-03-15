@@ -12,3 +12,7 @@ html {
 .onlyMobile {
   display: none;
 }
+
+.hidden {
+  display: none;
+}
